@@ -104,47 +104,8 @@ For production:
 
 bash
 npm start
-Usage Examples
-LSTM Prediction Request
-json
-POST /api/lstm-prediction
-{
-  "stock": "RELIANCE.NS",
-  "startDate": "2023-01-01",
-  "endDate": "2023-12-31",
-  "investmentAmount": 100000
-}
-VaR Analysis Request
-json
-POST /api/var-analysis
-{
-  "stocks": [
-    {"ticker": "RELIANCE.NS", "weight": 40},
-    {"ticker": "TCS.NS", "weight": 30},
-    {"ticker": "HDFCBANK.NS", "weight": 30}
-  ],
-  "confidenceLevel": 0.95,
-  "investmentAmount": 500000
-}
-AIF Recommendation Request
-json
-POST /api/aif-recommendation
-{
-  "riskProfile": "Moderate",
-  "investmentHorizon": "Medium",
-  "age": 35,
-  "incomeStability": "High",
-  "investmentAmount": 2000000
-}
-Sentiment Analysis Request
-json
-POST /api/sentiment-analysis
-{
-  "stock": "TCS.NS",
-  "startDate": "2023-01-01",
-  "endDate": "2023-12-31",
-  "investmentAmount": 75000
-}
+
+
 Deployment
 The application is configured for easy deployment to platforms like Render, Vercel, or Heroku. The backend is currently deployed on Render, and the frontend on Vercel.
 
